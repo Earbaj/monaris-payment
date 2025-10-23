@@ -1,8 +1,6 @@
-2. Flutter App Production Updates
-   Environment Configuration
-   Create lib/config/environment.dart:
+## 2. Flutter App Production Updates Environment Configuration Create lib/config/environment.dart:
 
-dart
+`dart
 abstract class Environment {
 static const String baseUrl = String.fromEnvironment(
 'BASE_URL',
@@ -18,7 +16,7 @@ static const String appName = String.fromEnvironment(
 'APP_NAME',
 defaultValue: 'Moneris App (Dev)',
 );
-}
+}`
 Updated Moneris Service (lib/services/moneris_service.dart)
 dart
 import 'dart:convert';
